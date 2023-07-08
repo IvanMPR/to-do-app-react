@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.container {
+  margin: 2rem auto;
+  max-width: 40rem;
+  text-align: center;
+}
+
+.add-new-todo {
+  margin-top: 1rem;
+}
+
+.open-modal-btn,
+.add-new-todo {
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  background-color: cadetblue;
+  border: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.open-modal-btn:hover,
+.add-new-todo:hover {
+  color: #fff;
+}
+
+.open-modal-btn:active,
+.add-new-todo:active {
+  transform: translateY(1px);
+}
+
+select {
+  /* box-sizing: content-box; */
+  padding: 0.5rem 1.5rem;
+  /* background-color: cadetblue; */
+  border: 1px solid cadetblue;
+  transition: color 0.2s ease-in-out;
+}
+
+.opt {
+  /* padding: 1rem; */
+  line-height: 1.9;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  margin-bottom: 2rem;
+}
+
+.list-item,
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-item-right {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+span {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+input[type='checkbox'] {
+  margin-right: 2rem;
+}
+
+.delete,
+.edit {
+  cursor: pointer;
+}
+
+.todo-form {
+  width: 20rem;
+  height: 10rem;
+  background-color: #fff;
+  border: 1px solid #333;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-content: center;
+}
+
+label {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.new-todo {
+  padding: 0.5rem;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
+  border: 1px solid #ccc;
+}
